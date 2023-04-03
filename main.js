@@ -27,7 +27,7 @@ window.MAP = map;
 
 const osm = new ol.layer.Tile({
   source: new ol.source.OSM(),
-  visible: false,
+  visible: true,
   layerName: "OSM",
 });
 map.addLayer(osm);
@@ -36,7 +36,7 @@ const stadiamap = new ol.layer.Tile({
   source: new ol.source.XYZ({
     url: "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png",
   }),
-  visible: true,
+  visible: false,
   layerName: "Stadia",
 });
 map.addLayer(stadiamap);
